@@ -1,0 +1,37 @@
+#todo-footer{
+    background-color: white;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    /* margin: 1.5rem; */
+    color: #777;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2), 
+    0 8px 0 -3px #f6f6f6, 
+    0 9px 1px -3px rgba(0,0,0,.2), 
+    0 16px 0 -6px #f6f6f6, 
+    0 17px 2px -6px rgba(0,0,0,.2);
+}
+
+.todo-filter-container {
+    display: flex;
+  }
+
+#todo-footer #delete-all-todo:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#todo-footer #delete-all-todo.is-invisible {
+    visibility: hidden!important;
+}
+
+.todo-filter-select{
+    cursor: pointer;
+    padding: 3px 7px;
+}
+
+.todo-filter-select.selected{
+    border: 1px solid rgba(175,47,47,.2);
+}

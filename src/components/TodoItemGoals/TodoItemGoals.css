@@ -1,0 +1,71 @@
+.todo-item {
+    background: white;
+    border-bottom: 1px solid #ededed;
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    /* border-radius: 10px; */
+    display: flex;
+    align-items: center;
+  }
+
+.checkmark-todo-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 3px;
+  margin-right: 10px;
+  border: 1px solid green;
+}
+
+.uncheckmark-todo-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  margin-right: 10px;
+  border-radius: 50%;
+  padding: 3px;
+  border: 1px solid #d9d9d9;
+}
+
+.todo-item .checkmark-emoji{
+  font-weight: bold;
+  font-size: 20px;
+  color:green;
+}
+
+.todo-item .uncheckmark-emoji{
+  font-weight: bold;
+  color:red;
+}
+
+.todo-item .completed {
+  text-decoration: line-through;
+  color: #d9d9d9;
+}
+
+#delete-item{  
+  font: inherit;
+  font-size: 16px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  display: none;
+}
+
+.todo-item:hover #delete-item {
+  display: block;
+}
+
+.todo-item #delete-item:hover {
+  transform: scale(1.1);
+}
